@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.bobby97.imagerecognition.MainActivity">
+
+    <ImageView
+        android:foregroundGravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view" />
+
+    <Button
+        android:layout_below="@+id/image_view"
+        android:foregroundGravity="center_horizontal"
+        android:text="Process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonProc" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonProc"
+        android:id="@+id/tvResult"
+        android:text="No text"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"/>
+
+</RelativeLayout>
